@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./hang.css">
+    <link rel="stylesheet" href="./output.css">
+    <title>HANGMAN</title>
+</head>
+<body class="dark text-black bg-yellow-50 dark:text-yellow-100 dark:bg-slate-900">
+    
+    <div id="gamemodel">
+        <div id="content" class="w-2/3 lg:w-96">
+            <img src="lost.gif" class="mb-6">
+            <h1 class="text-red-700 text-4xl lg:text-5xl mb-3">GAME OVER</h1>
+            <h2 class="text-black text-4xl lg:text-3xl mb-3">The Word Was: <b>ffff</b></h2>
+            <button id="again" class="bg-purple-500 w-full text-center h-11 text-3xl rounded-xl">Try Again</button>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="container" class=" md:w-screen md:h-screen flex-col lg:h-4/5 lg:w-4/5 lg:flex-row flex justify-around lg:justify-between items-center">
+        <div id="hangman-box">
+            <img src="./hangman-0.svg" alt="hangman" class="w-96 lg:max-w-xs">
+            <h1 class="text-center md:text-5xl lg:text-4xl  text-red-600">HANGMAN GAME</h1>
+        </div>
+
+        <div id="gamebox">
+
+            <ul id="worddisplay" class="mb-20 lg:mb-12">
+                <!-- <li id="letter"></li>
+                <li id="letter"></li>   
+                <li id="letter"></li>
+                <li id="letter"></li>
+                <li id="letter"></li> -->
+            </ul>
+
+            <div id="hint" class="text-3xl lg:text-2xl text-center mb-7 lg:mb-3">
+                Hint: <b class="text-3xl lg:text-2xl text-blue-400">Lorem ipsum dolor sit amet.</b>
+            </div>
+
+            <div id="guesses" class="text-4xl lg:text-2xl text-center mb-7 lg:mb-3">
+                Incorrect guesses: <b class="text-3xl lg:text-2xl text-red-700">0/6</b>
+            </div>
+
+
+            <div id="keys" class="gap-5 lg:gap-2">
+                <!-- <button>a</button><button>b</button><button>c</button><button>d</button>
+                <button>e</button><button>f</button><button>g</button><button>h</button>
+                <button>i</button><button>j</button><button>k</button><button>l</button>
+                <button>m</button><button>n</button><button>o</button><button>p</button>
+                <button>q</button><button>r</button><button>s</button><button>t</button>
+                <button>u</button><button>v</button><button>w</button><button>x</button>
+                <button>y</button><button>z</button>-->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<script src="list.js"></script>    
+<script src="hang.js"></script>    
+</body>
+</html>
